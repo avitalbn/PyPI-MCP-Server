@@ -1,7 +1,15 @@
-toml
-[project]
-name = "pypi-server"
-version = "0.1.0"
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
 
-[tool.uvx]
-entrypoint = "pypi_server:app"
+[project]
+name = "pypi-mcp-server"
+version = "0.1.0"
+dependencies = [
+  "httpx>=0.24.0",
+  "beautifulsoup4>=4.12.0",
+  "python-multipart>=0.0.6",
+  "typing-extensions>=4.5.0",
+  "logging>=0.4.9.6",
+  "mcp"
+]
