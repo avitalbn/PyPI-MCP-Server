@@ -1,0 +1,7 @@
+toml
+[project]
+name = "pypi-server"
+version = "0.1.0"
+
+[tool.uvx]
+entrypoint = "pypi_server:app"
