@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pypi-mcp-server"
 version = "0.1.0"
+py-modules = ['pypi_server']
 dependencies = [
   "httpx>=0.24.0",
   "beautifulsoup4>=4.12.0",
@@ -13,6 +14,3 @@ dependencies = [
   "logging>=0.4.9.6",
   "mcp"
 ]
-
-[tool.setuptools]
-py_modules = ['pypi_server']
