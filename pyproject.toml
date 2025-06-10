@@ -13,3 +13,6 @@ dependencies = [
   "logging>=0.4.9.6",
   "mcp"
 ]
+
+[tool.setuptools]
+py_modules = ['pypi_server']
